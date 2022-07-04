@@ -1,0 +1,37 @@
+﻿<Window x:Class="KeyBoardStyle.Perevirka"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyBoardStyle"
+        mc:Ignorable="d"
+        Title="Perevirka" Height="450" Width="1218">
+    <Grid Background="#FF0626FC" Margin="0,0,10,0">
+        <Label Content="Режим перевірки" HorizontalAlignment="Left" Margin="305,33,0,0" VerticalAlignment="Top" Width="238" FontSize="22" FontFamily="Arial Black"/>
+        <Label Content="Кодове слово" HorizontalAlignment="Left" Margin="25,92,0,0" VerticalAlignment="Top" Width="164" FontFamily="Segoe UI Black" FontSize="20"/>
+        <Label x:Name="CodeWord" Content="sunstrike" HorizontalAlignment="Left" Margin="235,94,0,0" VerticalAlignment="Top" Background="#FFE5FA02" FontFamily="Arial Black" FontSize="20"/>
+        <Label Content="Кількість спроб" HorizontalAlignment="Left" Margin="25,154,0,0" VerticalAlignment="Top" Width="199" FontFamily="Arial Black" FontSize="20"/>
+        <Label Content="Кількість введених символів" HorizontalAlignment="Left" Margin="25,217,0,0" VerticalAlignment="Top" Width="341" FontSize="20" FontFamily="Arial Black"/>
+        <TextBox x:Name="Tb" HorizontalAlignment="Left" Margin="25,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Height="24" KeyDown="Tb_KeyDown"/>
+        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" Margin="856,366,0,0" VerticalAlignment="Top" Height="58" Width="152" Background="#FFFC0606" Click="ExitButton_Click" RenderTransformOrigin="3.284,2.139"/>
+        <ComboBox x:Name="Cmb" HorizontalAlignment="Left" Margin="224,161,0,0" VerticalAlignment="Top" Width="118" Height="19">
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
+        <Label x:Name="NumberOfSymbols" Content="" HorizontalAlignment="Left" Margin="424,222,0,0" VerticalAlignment="Top" Width="168" FontSize="20" FontFamily="Arial Black"/>
+        <Label x:Name="InputText" Content="" HorizontalAlignment="Left" Margin="291,274,0,0" VerticalAlignment="Top" Width="229" FontFamily="Arial Black" FontSize="20"/>
+        <ComboBox x:Name="alpha" HorizontalAlignment="Left" Margin="448,158,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.31,-0.089">
+            <ListBoxItem Content="0.05"/>
+            <ListBoxItem Content="0.01"/>
+        </ComboBox>
+        <Label Content="Alpha" HorizontalAlignment="Left" Margin="369,154,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="20"/>
+        <Label Content="Дисперсії вибірок" HorizontalAlignment="Left" Margin="652,105,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="20"/>
+        <Label x:Name="TypeOfDispersion" Content="" HorizontalAlignment="Left" Margin="891,105,0,0" VerticalAlignment="Top" Width="307" FontFamily="Arial Black" FontSize="20"/>
+        <Label Content="P ідентифікації" HorizontalAlignment="Left" Margin="652,162,0,0" VerticalAlignment="Top" Width="214" FontFamily="Arial Black" FontSize="20"/>
+        <Label x:Name="P" Content="" HorizontalAlignment="Left" Margin="891,162,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="20" Width="59"/>
+        <Label Content="Помилка першого роду" HorizontalAlignment="Left" Margin="652,210,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.069,0.194" Width="280" FontFamily="Arial Black" FontSize="20"/>
+        <Label Content="Помилка другого роду" HorizontalAlignment="Left" Margin="652,266,0,0" VerticalAlignment="Top" Width="268" FontFamily="Arial Black" FontSize="20"/>
+        <Label x:Name="FirstType" Content="" HorizontalAlignment="Left" Margin="970,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.195,-0.191" FontFamily="Arial Black" FontSize="20"/>
+        <Label x:Name="Secondtype" Content="" HorizontalAlignment="Left" Margin="970,266,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="20" RenderTransformOrigin="1.4,0.45"/>
+    </Grid>
+</Window>

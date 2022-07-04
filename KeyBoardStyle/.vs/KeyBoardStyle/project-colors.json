@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "17ce32a9-bbd6-4cad-ab19-c274e456a832": {
+      "ProjectGuid": "17ce32a9-bbd6-4cad-ab19-c274e456a832",
+      "DisplayName": "KeyBoardStyle",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

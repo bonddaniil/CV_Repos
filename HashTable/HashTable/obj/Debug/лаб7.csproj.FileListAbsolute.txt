@@ -1,0 +1,8 @@
+D:\Учеба\АСД\лаб7\лаб7\лаб7\bin\Debug\лаб7.exe.config
+D:\Учеба\АСД\лаб7\лаб7\лаб7\bin\Debug\лаб7.exe
+D:\Учеба\АСД\лаб7\лаб7\лаб7\bin\Debug\лаб7.pdb
+D:\Учеба\АСД\лаб7\лаб7\лаб7\obj\Debug\лаб7.csproj.AssemblyReference.cache
+D:\Учеба\АСД\лаб7\лаб7\лаб7\obj\Debug\лаб7.csproj.SuggestedBindingRedirects.cache
+D:\Учеба\АСД\лаб7\лаб7\лаб7\obj\Debug\лаб7.csproj.CoreCompileInputs.cache
+D:\Учеба\АСД\лаб7\лаб7\лаб7\obj\Debug\лаб7.exe
+D:\Учеба\АСД\лаб7\лаб7\лаб7\obj\Debug\лаб7.pdb
