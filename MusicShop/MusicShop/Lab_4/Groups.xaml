@@ -1,0 +1,29 @@
+﻿<Window x:Class="Lab_4.Groups"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_4"
+        mc:Ignorable="d"
+        Title="Groups" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/фонГурти.jpg"/>
+        </Grid.Background>
+        <Grid.OpacityMask>
+            <ImageBrush ImageSource="/фонГурти.jpg"/>
+        </Grid.OpacityMask>
+        <Button x:Name="ExitToMenu" Content="У меню" HorizontalAlignment="Left" Margin="668,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.988,-0.246" Height="27" Width="94" Click="ExitToMenu_Click" Background="#FFF00303" FontWeight="Bold"/>
+        <DataGrid x:Name="GroupsDG" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,400,54"/>
+        <TextBox x:Name="IdGroupCh" HorizontalAlignment="Left" Margin="642,10,0,0" TextWrapping="Wrap" Text="Введіть Id" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="GroupNameCh" HorizontalAlignment="Left" Margin="642,179,0,0" TextWrapping="Wrap" Text="Введіть назву гурту" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Add" Content="Додати гурт" HorizontalAlignment="Left" Margin="642,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.389,0.004" Height="25" Width="120" Click="Add_Click" Background="#FF62F40B"/>
+        <TextBox x:Name="GroupNameDel" HorizontalAlignment="Left" Margin="426,217,0,0" TextWrapping="Wrap" Text="Введіть назву гурту" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DeleteButton" Content="Видатити гурт" HorizontalAlignment="Left" Margin="426,261,0,0" VerticalAlignment="Top" Height="25" Width="120" Click="DeleteButton_Click" Background="#FFF0D109"/>
+        <ComboBox x:Name="TypeOfGroup" HorizontalAlignment="Left" Margin="642,72,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="GenreOfGroup" HorizontalAlignment="Left" Margin="642,137,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="LabelType" Content="Введіть тип гурту" HorizontalAlignment="Left" Margin="642,41,0,0" VerticalAlignment="Top" Width="120" Background="#FFF7FCFC"/>
+        <Label Content="Введіть жанр гурту" HorizontalAlignment="Left" Margin="642,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.11,0.65" Width="120" Background="#FFFAF2F2" Height="26"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Lab_4.Musicians"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_4"
+        mc:Ignorable="d"
+        Title="Records of chosen group" Height="450" Width="800">
+    <Grid Background="#FF2BCC7B">
+        <Button x:Name="Exit" Content="У меню" HorizontalAlignment="Left" Margin="668,351,0,0" VerticalAlignment="Top" Height="42" Width="98" Click="Exit_Click" Background="#FFF90909" FontWeight="Bold"/>
+        <DataGrid x:Name="MusiciansDg" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,273,583,41"/>
+        <ComboBox x:Name="ChooseGroup" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Find" Content="Знайти гурт" HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" Height="24" Width="156" Click="Find_Click"/>
+        <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Margin="552,81,0,0" VerticalAlignment="Top" Height="22" Width="76" Click="Next_Click" Background="#FF06F70C"/>
+        <Button x:Name="Prev" Content="Previous" HorizontalAlignment="Left" Margin="141,79,0,0" VerticalAlignment="Top" Height="24" Width="76" Click="Prev_Click" Background="#FFF0F317"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="220" Margin="272,160,0,0" VerticalAlignment="Top" Width="409"/>
+
+    </Grid>
+</Window>

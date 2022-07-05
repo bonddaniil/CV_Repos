@@ -1,0 +1,26 @@
+﻿<Window x:Class="Lab_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.OpacityMask>
+            <ImageBrush ImageSource="/фон.png"/>
+        </Grid.OpacityMask>
+        <Grid.Background>
+            <ImageBrush ImageSource="/фон.png"/>
+        </Grid.Background>
+        <Button x:Name="GroupsButton" Content="Редагувати дані про гурти" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Height="35" Width="176" Click="GroupsButton_Click" Background="#FF04E5C4" FontWeight="Bold"/>
+        <Button x:Name="Musicians" Content="Дані про платівки" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="176" Click="Musicians_Click" Background="#FF04E5C4" FontWeight="Bold" Margin="0,166,0,0"/>
+        <Button x:Name="RecordsButton" Content="Редагувати дані про платівки" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Height="35" Width="210" Click="RecordsButton_Click" Background="#FF04E5C4" FontWeight="Bold"/>
+        <Button x:Name="TracksAdd" Content="Знайти твори обраного гурту" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="36" Width="176" Click="TracksAdd_Click" Background="#FF04E5C4" FontWeight="Bold"/>
+        <Button x:Name="ExitButton" Content="Вийти " HorizontalAlignment="Left" Margin="663,353,0,0" VerticalAlignment="Top" Height="40" Width="95" RenderTransformOrigin="1.019,0.614" Click="ExitButton_Click" Background="#FFF30606" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="-82,523,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Інформаційна система музичного магазину" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" Background="#FF08FCD9" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="RedactMusicians" Content="Редагувати дані про музиканів" HorizontalAlignment="Center" Margin="0,266,0,0" VerticalAlignment="Top" Click="RedactMusicians_Click" Height="41" Width="188" Background="#FF04E5C4" FontWeight="Bold"/>
+        <Button x:Name="TracksRed" Content="Редагувати дані про треки" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Height="26" Width="210" Background="#FF04E5C4" FontWeight="Bold" Click="TracksRed_Click"/>
+    </Grid>
+</Window>

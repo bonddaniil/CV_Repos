@@ -1,0 +1,30 @@
+﻿<Window x:Class="Lab_4.Records"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_4"
+        mc:Ignorable="d"
+        Title="Records" Height="450" Width="800">
+    <Grid Background="#FF16F90B">
+        <Button x:Name="ExitButton" Content="У меню" HorizontalAlignment="Left" Margin="496,358,0,0" VerticalAlignment="Top" Height="32" Width="108" Click="ExitButton_Click" RenderTransformOrigin="1.032,1.547" Background="#FFF10808" FontWeight="Bold"/>
+        <DataGrid x:Name="RecordsDG" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,400,306"/>
+        <TextBox x:Name="IDAdd" HorizontalAlignment="Left" Margin="650,10,0,0" TextWrapping="Wrap" Text="Введіть Id пластинки" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AddIdGroup" HorizontalAlignment="Left" Margin="650,38,0,0" TextWrapping="Wrap" Text="Введіть Id гурту" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RecordNameAdd" HorizontalAlignment="Left" Margin="650,66,0,0" TextWrapping="Wrap" Text="Введіть назву запису" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CompanyNameAdd" HorizontalAlignment="Left" Margin="650,94,0,0" TextWrapping="Wrap" Text="Введіть назву виробника" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="WholesaleAdd" HorizontalAlignment="Left" Margin="650,166,0,0" TextWrapping="Wrap" Text="Введіть оптову ціну" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RetailAdd" HorizontalAlignment="Left" Margin="650,192,0,0" TextWrapping="Wrap" Text="Введіть роздрібну ціну" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="DateAdd" HorizontalAlignment="Left" Margin="650,235,0,0" TextWrapping="Wrap" Text="Введіть дату" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="LastAdd" HorizontalAlignment="Left" Margin="580,261,0,0" TextWrapping="Wrap" Text="Введіть кількіть проданих минулого року" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="ThisAdd" HorizontalAlignment="Left" Margin="606,304,0,0" TextWrapping="Wrap" Text="Введіть кількіть цього року" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="LeftAdd" HorizontalAlignment="Left" Margin="606,331,0,0" TextWrapping="Wrap" Text="Введіть кількість на складі" VerticalAlignment="Top" Width="164"/>
+        <Button x:Name="AddButton" Content="Додати Платівку" HorizontalAlignment="Left" Margin="648,358,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.415,-0.198" Height="29" Width="122" Click="AddButton_Click" Background="#FF1DA716" FontWeight="Bold"/>
+        <TextBox x:Name="DeleteName" HorizontalAlignment="Left" Margin="496,38,0,0" TextWrapping="Wrap" Text="Введіть назву платівки" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="DeleteRecordButton" Content="Видалити платівку" HorizontalAlignment="Left" Margin="514,67,0,0" VerticalAlignment="Top" Width="122" Height="23" Click="DeleteRecordButton_Click" Background="#FFF6E708" FontWeight="Bold"/>
+        <ComboBox x:Name="ShopBuy" HorizontalAlignment="Left" Margin="650,136,0,0" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="292" Margin="0,147,0,0" VerticalAlignment="Top" Width="412"/>
+        <Label Content="&lt;-Лідер продажу" HorizontalAlignment="Left" Margin="341,208,0,0" VerticalAlignment="Top" Background="#FF0EE5E5"/>
+
+    </Grid>
+</Window>
